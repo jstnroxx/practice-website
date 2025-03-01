@@ -1,0 +1,1 @@
+It is a website where I practice my hard skills in development.
