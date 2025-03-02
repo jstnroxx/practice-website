@@ -1,1 +1,1 @@
-It is a website where I practice my hard skills in development.
+It is a website where I practice my hard skills in web development.
