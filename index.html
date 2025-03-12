@@ -13,66 +13,88 @@
     </head>
 
     <body>
-        <h1>Practice</h1>
-        <hr>
+        <header>
+            <h1>Practice</h1>
+            <hr>
 
-        <nav>
-            <ul>
-                <li><a href="#introduction">Introduction</a></li>
-                <li><a href="#lorem ipsum">Lorem</a></li>
-                <li><a href="#description list">List</a></li>
-                <li><a href="#eof">End</a></li>
-            </ul>
-        </nav>
-        <hr>
+            <nav aria-label="primary-navigation">
+                <h3 style="margin-left: 25px">Navigation</h3>
+                <ul>
+                    <li><a href="#introduction">Introduction</a></li>
+                    <li><a href="#lorem-ipsum">Lorem</a></li>
+                    <li><a href="#description-list">List</a></li>
+                    <li><a href="#eof">End</a></li>
+                </ul>
+            </nav>
+            <hr>
+        </header>
 
-        <section id="introduction">
-            <ol>
-                <li>
-                    <h2>Hello World!</h2>
-                    <p>This is a page for my HTML skill training.</p>
-                    <br>
-                </li>
+        <main>
+            <section id="introduction">
+                <ol>
+                    <li>
+                        <h2>Hello World!</h2>
+                        <p>This is a page for my HTML skill training.</p>
+                        <br>
+                    </li>
 
-                <li>
-                    <h3>Showcase page!</h3>
-                    <p><em>&nbsp;It is a <abbr title="This is an example of abbreviation."><a href="https://www.wikipedia.org/">showcase</a></abbr> page.</em></p>
-                </li>
-            </ol>
-        </section>   
-        <hr>
+                    <li>
+                        <h2>Showcase page</h2>
+                        <p>
+                            <em>
+                                &nbsp;It is a <abbr title="This is an example of abbreviation."><a href="https://www.wikipedia.org/" target="_blank">showcase</a></abbr> page.
+                            </em>
+                        </p>
+                    </li>
+                </ol>
+            </section>   
+            <hr>
 
-        <section id="lorem ipsum">
-            <h2>Lorem ipsum paragraph</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi molestias atque sequi id officia incidunt repellat nobis, necessitatibus dolor blanditiis esse reiciendis? Corporis, architecto deserunt? Facere ipsum commodi ipsam qui.
-            Est quia, autem sunt nihil eaque fugiat voluptatibus neque cumque amet nam quis velit asperiores ab distinctio architecto, odit quae! Cum ipsum, ut exercitationem quos amet modi itaque in ad.
-            Accusantium, nemo porro. Impedit, culpa distinctio! Quia ipsa consequuntur qui quam esse eveniet repudiandae, illum at doloribus assumenda. Doloribus sequi quaerat quae nostrum ipsum velit in quod eligendi quidem. Error.
-            Esse nesciunt cumque nostrum sequi dolor, repudiandae est omnis. Dolore nihil minus facilis reprehenderit veritatis iste quasi harum inventore possimus quisquam! Accusamus, provident. Provident rerum molestias earum neque molestiae officia.
-            Ad illum a omnis ullam quidem odio libero tempore tenetur, consectetur ratione, debitis officiis deserunt eum. Quidem suscipit velit vero, repellat, quos esse labore inventore eaque cupiditate nostrum consequatur minus?</p>
-        </section>
-        <hr>
+            <section id="lorem-ipsum">
+                <h2>Lorem ipsum paragraph</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi molestias atque sequi id officia incidunt repellat nobis, necessitatibus dolor blanditiis esse reiciendis? Corporis, architecto deserunt? Facere ipsum commodi ipsam qui.
+                Est quia, autem sunt nihil eaque fugiat voluptatibus neque cumque amet nam quis velit asperiores ab distinctio architecto, odit quae! Cum ipsum, ut exercitationem quos amet modi itaque in ad.
+                Accusantium, nemo porro. Impedit, culpa distinctio! Quia ipsa consequuntur qui quam esse eveniet repudiandae, illum at doloribus assumenda. Doloribus sequi quaerat quae nostrum ipsum velit in quod eligendi quidem. Error.
+                Esse nesciunt cumque nostrum sequi dolor, repudiandae est omnis. Dolore nihil minus facilis reprehenderit veritatis iste quasi harum inventore possimus quisquam! Accusamus, provident. Provident rerum molestias earum neque molestiae officia.
+                Ad illum a omnis ullam quidem odio libero tempore tenetur, consectetur ratione, debitis officiis deserunt eum. Quidem suscipit velit vero, repellat, quos esse labore inventore eaque cupiditate nostrum consequatur minus?</p>
+            </section>
+            <hr>
 
-        <section id="description list">
-            <h2>This one is about description list</h2>
-            
-            <dl>
-                <dt>First term</dt>
-                <dd>description of the first term</dd>
-                <dt>Second term</dt>
-                <dd>Some details on the second term</dd>
-                <dt>Third term</dt>
-                <dd>The last term in the list</dd>
-            </dl>
-        </section>
-        <hr>
+            <section id="description-list">
+                <h2>This one is about description list</h2>
+                
+                <dl>
+                    <dt>First term</dt>
+                    <dd>description of the first term</dd>
+                    <dt>Second term</dt>
+                    <dd>Some details on the second term</dd>
+                    <dt>Third term</dt>
+                    <dd>The last term in the list</dd>
+                </dl>
+            </section>
+            <hr>
 
-        <section id="eof">
-            &nbsp;<address>Almaty, Kazakhstan</address>
-            &lt; &copy; <a href="about.html">Maxim S.</a> 2025. &gt;
-        </section>
+            <details>
+                <summary>Some details in here:</summary>
+                <p>&emsp;Detail (indeed)</p>
+                <p>
+                    &emsp;It is a <mark>&nbsp;marked&nbsp;</mark> detail
+                </p>
+            </details>
+            <hr>
+        </main>
 
-        <br>
-        <a href="#">To the top</a>
+        <footer>
+            <section id="eof" aria-label="bottom-of-the-page">
+                &nbsp;<address>Almaty, Kazakhstan</address>
+
+                <p style="margin: 0">
+                    &lt; &copy; <a href="about.html">Maxim S.</a> 2025. &gt;
+                </p>
+    
+                <p><a href="#">To the top</a></p>
+            </section>
+        </footer>
 
         <!-- 
             <abbr> - is some information when hovered over the text.
@@ -81,8 +103,14 @@
             <ol> | <ul> - ordered/unordered list, contains <li> elements.
             <dl> - description list, contains <dt> (term) and <dd> (details) elements.
             <a> - anchor tag (allows to create hyperlinks).
+            <section>, <article> - semantic division of content, to which an id can be assigned. <article> is preferred for content with strict topic.
+            <header>, <main>, <footer>  - says for itself.
+            <details> - creates a drop-down openable section, uses <summary> for its title.\
+            <mark> - highlights the text with yellow by default.
 
             &nbsp; - is a little space.
+            &ensp; - 2 nbsp's.
+            &emsp; - 4 nbsp's.
             &lt; | &gt; - less/greater than symbol.
             &copy; - copyright symbol;
         -->
