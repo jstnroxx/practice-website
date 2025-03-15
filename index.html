@@ -23,6 +23,7 @@
                     <li><a href="#introduction">Introduction</a></li>
                     <li><a href="#lorem-ipsum">Lorem</a></li>
                     <li><a href="#description-list">List</a></li>
+                    <li><a href="#table-example">Table</a></li>
                     <li><a href="#eof">End</a></li>
                 </ul>
             </nav>
@@ -74,6 +75,54 @@
             </section>
             <hr>
 
+            <section id="table-example">
+                <h2>A little example of table</h2>
+                
+                <table>
+                    <caption>Schedule</caption>
+                    <thead>    
+                        <tr>
+                            <th>&nbsp;</th>
+                            <th scope="col">Time</th>
+                            <th scope="col">Activity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Morning</th>
+                            <td><time datetime="06:00">6 am</time></td>
+                            <td>Wake up</td>
+                        </tr>
+                        <tr>
+                            <th>&nbsp;</th>
+                            <td><time datetime="08:00">8 am</time></td>
+                            <td>Breakfast</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Break</th>
+                            <td><time datetime="13:00">1 pm</time></td>
+                            <td>Lunch</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Free time</th>
+                            <td><time datetime="19:00">7 pm</time></td>
+                            <td>Dinner</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Night</th>
+                            <td><time datetime="22:00">10 pm</time></td>
+                            <td>Go to sleep</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3" style="text-align: center;">That's it.</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+            <hr>
+
             <details>
                 <summary>Some details in here:</summary>
                 <p>&emsp;Detail (indeed)</p>
@@ -107,6 +156,8 @@
             <header>, <main>, <footer>  - says for itself.
             <details> - creates a drop-down openable section, uses <summary> for its title.\
             <mark> - highlights the text with yellow by default.
+            <table> - creates a table (duh), <tr> is used inside to distinguish the rows and <td> used to fill the rows; <td> has a colspan="" and rowspan="" attributes to change the amount of cells that the record takes; <th> is used to add headers for columns, <caption> is used to add the title for the table, <thead>, <tbody>, <tfoot> to add semantics for the table headers and content. scope="" attribute is used for <th> to add semantics.
+            <time> - a semantic representation of time.
 
             &nbsp; - is a little space.
             &ensp; - 2 nbsp's.
